@@ -12,7 +12,7 @@ $(document).ready(function(){
     };
 
     //sets randomNum value
-    randomNumber = randomNumF(19,120);
+    randomNumber = randomNumF(19,121);
     $(".randomNum").text(randomNumber);
 
     setJewelVal();
