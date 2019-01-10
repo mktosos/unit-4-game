@@ -1,11 +1,10 @@
 $(document).ready(function(){
-    var mathRandom = Math.floor(Math.random());
+    total = 0;
     var wins = 0;
     var losses = 0;
     $(".wins").text(wins);
     $(".losses").text(losses);
-    total = 0;
-    var firstValue = false;
+    var mathRandom = Math.floor(Math.random());
 
     //Returns a random number between min (inclusive) and max (exclusive)
     function randomNumF(min, max) {
@@ -19,7 +18,6 @@ $(document).ready(function(){
     setJewelVal();
     
     //on click event for each jewel adds to total 
-
     $(".jewel1").on('click', function() {
         $("#totalJewels").text(total += jewel1);
         onClick();
@@ -41,10 +39,14 @@ $(document).ready(function(){
     function onClick(){
         $(".wins").text(wins);
         if (total==randomNumber){
-            win()
+            wins+= 1;
+            $(".wins").text(wins);
+            reset();
         }
         else if (total>randomNumber){
-            lose();
+            losses+= 1;
+            $(".losses").text(losses);
+            reset();
         } 
     }
     //sets random number to each jewel
@@ -55,17 +57,6 @@ $(document).ready(function(){
         jewel4 = randomNumF(1,13);
     }
         
-    function win() {
-        wins+= 1;
-        $(".wins").text(wins);
-        reset();
-    }
-
-    function lose() {
-        losses+= 1;
-        $(".losses").text(losses);
-        reset();
-    }
     //reset total jewels and randomNumber
     function reset() {
         total=0;
@@ -74,6 +65,4 @@ $(document).ready(function(){
         $("#totalJewels").text(total);
         setJewelVal();
     }
-   
     });
-
