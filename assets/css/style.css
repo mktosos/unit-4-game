@@ -1,13 +1,21 @@
 .jumbotron{
     text-align: center;
+    /* background-image: url("  ../../assets/images/thanos.png");
+    background-repeat: no-repeat;
+    size: max; */
 }
 .header {
     margin: (3px, solid, black);
     padding: 10px;
     text-align: center;
-}.col-sm {
+}
+.col-sm {
     padding: 25px;
     border: 3px solid black;
     margin: 5px;
-
+}
+.totalJewels {
+    padding: 25px;
+    border: 3px solid lightgray;
+    margin: 5px;
 }
