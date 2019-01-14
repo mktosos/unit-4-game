@@ -21,7 +21,7 @@
     width: 711px;
     height: 90px;
     position: absolute;
-    top: 17%;
+    top: 14%;
     left: 15px;
     color: antiquewhite;
 
@@ -49,30 +49,31 @@
 
   }
   .jewel1{
-    opacity: 0;
+    opacity: 90;
     position: relative;
     left: 20px;
     top: 15px;
   }
   .jewel2{
-    opacity: 0;
+    opacity: 90;
     position: relative;  
     left: -22px;
     top:0;
    
     }
   .jewel3{
-    opacity: 0; 
+    opacity: 90; 
     position: relative;  
     left: -20px;
     
         
     }
   .jewel4{
-    opacity: 0;
+    opacity: 90;
     position: relative;
     left: -35px;
     top: 10px;
+    color: white
     }
     #totalJewels{
         position: relative;
