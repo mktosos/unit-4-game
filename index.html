@@ -13,46 +13,61 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class = "jumbotron">
-    <h1>Crystal Collector</h1>
-    </div>
-
-    <header>
-        <div class="header">
-        <p>The object of this game is to accumulate the same number of gem points as is displayed.</p>
-        <p>If you match it, you win. If you go over, you lose.</p>
-        </div>
-    </header>
-
+    
+    
+   
     <div class="container">
         <div class ="row">
-            <div class="col-sm-9 randomNum">
-            </div>
-            <div>
-                <p >wins: </p><span class=wins></span>
-                <p >losses: </p><span class=losses></span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm jewel1">
-                jewel 1
-            </div>
-            <div class="col-sm jewel2">
-                jewel 2
-            </div>
-            <div class="col-sm jewel3">
-                jewel 3    
-            </div>
-            <div class="col-sm jewel4">
-                jewel 4
-            </div>
-        </div>
-        <div class="row totalJewels">
-            Total Jewels: 
-            <span id="totalJewels"></span>
-        </div>
-    </div>
+            
+            <div id=winLoss>
+                <p >wins: <span class=wins></span></p>
+                <p >losses: <span class=losses></span></p>
+                <p>match this: <span class="randomNum"></span>
 
+                </p>
+            </div>
+           
+        </div>
+        <div class = "thanosImg">
+                <img src="assets/images/thanos.png">
+            <div class="row jewelRow">
+                <div class="jewel1 col-sm-2">
+                    
+                </div>
+                <div class="jewel1 col-sm-2 ">
+                    jewel 1
+                    jewel 1
+                    jewel 1
+                </div>
+                <div class="col-sm-2 jewel2">
+                    jewel 2
+                    jewel 2
+                    jewel 2
+                </div>
+                
+                <div class="col-sm-2 jewel3"> 
+                    jewel 3
+                    jewel 3
+                    jewel 3
+                </div>
+                <div class="col-sm-2 jewel4">
+                    jewel 4
+                    jewel 4
+                    jewel 4
+                </div>
+            </div>
+            <div class="rules">
+                    <p>Click the various 4 finger gems and try to match the gem total. An exact match gives you a win. If you go over, you lose.</p>
+                    </div>
+            <b><div id="totalJewels" >
+            </div></b>
+            </div>
+        
+        
+                
+            
+    </div>
+    </div>
     <script type="text/javascript" src="assets/javascript/game.js"></script>   
 </body>
 </html>
