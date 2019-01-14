@@ -76,8 +76,8 @@
     }
     #totalJewels{
         position: relative;
-        top :-400px;
-        left: 295px;
+        top :-473px;
+        left: 290px;
         color: black;
         font-size: 40px;
         font-weight: bold;
@@ -89,7 +89,16 @@
         font-weight: bold;
         font-family: fantasy;
         position: relative;
-        top: 140px;
+        top: 130px;
         left: 40px;
         z-index: 100;
+    }
+    #title{
+        width: 711px;
+        font-size: 35px;
+        font-family: fantasy;
+        text-align: right;
+        position: relative;
+        top: -50px;
+        right: 10px;
     }
