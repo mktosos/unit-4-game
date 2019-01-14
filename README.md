@@ -5,6 +5,8 @@ This is a game that utilizes random number generators, onClick events, and if el
 
 Each jewel is assigned a random number between 1-12. The user gets to know its hidden value by pressing it and obsering the results. The object is to accumulate the jewels, matching the random number the game gives you. An exact match is a win. If you go over, you lose. The game resarts after a win or loss and tallies your results.
 
+I was not able to make this game responsive. The dimensions are specified by px, and the input is a bit hacky but works properly. I was not able to get the image and onClick div to scale responsively and correctly.
+
 Credits
 The game project student developer is Mike Taniguchi.
 
